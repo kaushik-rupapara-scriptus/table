@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "serve": "vite preview",
-    "start": "vite"
+    "start": "node init && vite"
   },
   "dependencies": {
     "@tanstack/lit-table": "^8.21.3",
