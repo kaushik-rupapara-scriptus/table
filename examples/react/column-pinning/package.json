@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "serve": "vite preview --port 3000",
-    "start": "vite"
+    "start": "node init && vite"
   },
   "dependencies": {
     "@faker-js/faker": "^8.4.1",
