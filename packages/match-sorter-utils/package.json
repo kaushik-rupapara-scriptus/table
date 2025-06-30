@@ -52,9 +52,9 @@
     "test:lib": "vitest",
     "test:lib:dev": "pnpm test:lib --watch",
     "test:types": "tsc --noEmit",
-    "build": "pnpm build:rollup && pnpm build:types",
-    "build:rollup": "rollup --config rollup.config.mjs",
-    "build:types": "tsc --emitDeclarationOnly"
+    "build": "node init && pnpm build:rollup && pnpm build:types",
+    "build:rollup": "node init && rollup --config rollup.config.mjs",
+    "build:types": "node init && tsc --emitDeclarationOnly"
   },
   "dependencies": {
     "remove-accents": "0.5.0"

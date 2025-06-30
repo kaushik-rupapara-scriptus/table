@@ -45,9 +45,9 @@
   "scripts": {
     "clean": "rimraf ./build",
     "test:types": "tsc --noEmit",
-    "build": "pnpm build:rollup && pnpm build:types",
-    "build:rollup": "rollup --config rollup.config.mjs",
-    "build:types": "tsc --emitDeclarationOnly"
+    "build": "node init && pnpm build:rollup && pnpm build:types",
+    "build:rollup": "node init && rollup --config rollup.config.mjs",
+    "build:types": "node init && tsc --emitDeclarationOnly"
   },
   "dependencies": {
     "@tanstack/table-core": "workspace:*"
